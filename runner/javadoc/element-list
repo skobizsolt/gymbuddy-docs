@@ -1,0 +1,13 @@
+com.gymbuddy.workoutrunner
+com.gymbuddy.workoutrunner.config
+com.gymbuddy.workoutrunner.controller
+com.gymbuddy.workoutrunner.dto
+com.gymbuddy.workoutrunner.exception
+com.gymbuddy.workoutrunner.mapper
+com.gymbuddy.workoutrunner.model
+com.gymbuddy.workoutrunner.persistence.domain
+com.gymbuddy.workoutrunner.persistence.domain.enums
+com.gymbuddy.workoutrunner.persistence.query
+com.gymbuddy.workoutrunner.persistence.query.dto
+com.gymbuddy.workoutrunner.persistence.repository
+com.gymbuddy.workoutrunner.service

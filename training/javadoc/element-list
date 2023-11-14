@@ -1,0 +1,13 @@
+com.gymbuddy.training
+com.gymbuddy.training.config
+com.gymbuddy.training.controller
+com.gymbuddy.training.exception
+com.gymbuddy.training.mapper
+com.gymbuddy.training.model
+com.gymbuddy.training.model.steps
+com.gymbuddy.training.model.util
+com.gymbuddy.training.persistence.domain
+com.gymbuddy.training.persistence.query
+com.gymbuddy.training.persistence.query.dto
+com.gymbuddy.training.persistence.repository
+com.gymbuddy.training.service
