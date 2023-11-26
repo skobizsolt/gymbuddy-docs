@@ -1,0 +1,24 @@
+    1  sudo dnf update
+    3  sudo dnf install postgresql15.aarch64 postgresql15-server -y
+    5  sudo postgresql-setup --initdb
+    6  sudo systemctl start postgresql
+    7  sudo systemctl enable postgresq
+    8  sudo systemctl status postgresql
+   21  sudo passwd postgres
+   23  sudo cp /var/lib/pgsql/data/postgresql.conf /var/lib/pgsql/data/postgresql.conf.bck
+   24  sudo vi /var/lib/pgsql/data/postgresql.conf
+   27  sudo cp /var/lib/pgsql/data/pg_hba.conf /var/lib/pgsql/data/pg_hba.conf.bck
+   28  sudo vi /var/lib/pgsql/data/pg_hba.conf
+   29  sudo systemctl restart postgresql
+   30  sudo systemctl status postgresql
+   31  CREATE USER skb WITH PASSWORD '';
+   32  sudo -i -u postgres psql
+   34  sudo dnf install java-17-amazon-corretto
+   49  hostname --fqdn
+   84  psql -h localhost -U postgres -d gymbuddy -a -f gymbuddy.sql
+   87  cd scripts/
+   89  chmod +x deploy.sh
+   90  ./deploy.sh
+  107  sudo lsof -i -P -n | grep LISTEN
+  116  ps -ef | grep java
+  127  history >> history.txt
