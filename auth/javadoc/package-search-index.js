@@ -1,1 +1,0 @@
-packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"com.gymbuddy.auth.config"},{"l":"com.gymbuddy.auth.exception"},{"l":"com.gymbuddy.auth.security"}];updateSearchResults();

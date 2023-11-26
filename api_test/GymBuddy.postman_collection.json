@@ -1,0 +1,492 @@
+{
+	"info": {
+		"_postman_id": "ed75faf2-9090-4129-9312-aa7470e182d9",
+		"name": "GymBuddy",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "WorkoutController",
+			"item": [
+				{
+					"name": "getAllWorkouts",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workouts",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWorkout",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workouts/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "createWorkout",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"testing\",\r\n    \"description\": \"\",\r\n    \"registeredOn\": \"2023-09-25T00:52:43.355188\",\r\n    \"lastModified\": \"2023-09-25T00:52:43.355188\",\r\n    \"category\": \"BALANCE\",\r\n    \"difficulty\": \"EASY\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/workouts?userId=rFcNlpn5kmW3mym9R6LHoi3WpYH2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "rFcNlpn5kmW3mym9R6LHoi3WpYH2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editWorkout",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"title\": \"Módosított Teszt workout\",\r\n    \"description\": \"waaaaaaaaaaa\",\r\n    \"difficulty\": \"EASY\",\r\n    \"category\": \"BALANCE\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/workouts/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteWorkout",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workouts/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "WorkoutStepController",
+			"item": [
+				{
+					"name": "getAllWorkoutSteps",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workouts/1/steps",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1",
+								"steps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getWorkoutStep",
+					"request": {
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workouts/1/steps/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1",
+								"steps",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addStep",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "{{jwt}}",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stepName\": \"Test Step\",\r\n    \"details\": \"Test details\",\r\n    \"workoutType\": \"REP\",\r\n    \"estimatedTime\": 3000\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/workouts/1/steps",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1",
+								"steps"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "editStep",
+					"request": {
+						"method": "PUT",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"stepName\": \"Edited Test Step\",\r\n    \"details\": \"Test details waaaaaaaaaaaaa\",\r\n    \"workoutType\": \"REP\"\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/workouts/1/steps/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1",
+								"steps",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "deleteStep",
+					"request": {
+						"method": "DELETE",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workouts/1/steps/1",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workouts",
+								"1",
+								"steps",
+								"1"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "SimulationController",
+			"item": [
+				{
+					"name": "getRecords",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workout-runner/records?sessionId=b8175113-c92c-433d-8c75-07481ec2ab8c",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workout-runner",
+								"records"
+							],
+							"query": [
+								{
+									"key": "sessionId",
+									"value": "b8175113-c92c-433d-8c75-07481ec2ab8c"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "getActivity",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "GET",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"url": {
+							"raw": "{{url}}/workout-runner/activity?userId=rFcNlpn5kmW3mym9R6LHoi3WpYH2",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workout-runner",
+								"activity"
+							],
+							"query": [
+								{
+									"key": "userId",
+									"value": "rFcNlpn5kmW3mym9R6LHoi3WpYH2"
+								}
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "addRecord",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"workoutId\": 1,\r\n      \"stepId\": 1,\r\n      \"sessionId\": \"b8175113-c92c-433d-8c75-07481ec2ab8c\",\r\n      \"duration\": 550\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/workout-runner/add",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workout-runner",
+								"add"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "start-session",
+					"request": {
+						"auth": {
+							"type": "noauth"
+						},
+						"method": "POST",
+						"header": [
+							{
+								"key": "Authorization",
+								"value": "Bearer {{jwt}}",
+								"type": "default"
+							}
+						],
+						"body": {
+							"mode": "raw",
+							"raw": "{\r\n    \"userId\": \"rFcNlpn5kmW3mym9R6LHoi3WpYH2\",\r\n    \"workoutId\": 1\r\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "{{url}}/workout-runner/new-session",
+							"host": [
+								"{{url}}"
+							],
+							"path": [
+								"workout-runner",
+								"new-session"
+							]
+						}
+					},
+					"response": []
+				}
+			]
+		},
+		{
+			"name": "getGeneralWorkoutData",
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Authorization",
+						"value": "Bearer {{jwt}}",
+						"type": "default"
+					}
+				],
+				"url": {
+					"raw": "{{url}}/workouts/data/1/details",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"workouts",
+						"data",
+						"1",
+						"details"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,1118 @@
+
+  .   ____          _            __ _ _
+ /\\ / ___'_ __ _ _(_)_ __  __ _ \ \ \ \
+( ( )\___ | '_ | '_| | '_ \/ _` | \ \ \ \
+ \\/  ___)| |_)| | | | | || (_| |  ) ) ) )
+  '  |____| .__|_| |_|_| |_\__, | / / / /
+ =========|_|==============|___/=/_/_/_/
+ :: Spring Boot ::                (v3.0.5)
+
+2023-11-24T19:03:09.516Z  INFO 3049 --- [           main] c.g.t.GymbuddyTrainingApplication        : Starting GymbuddyTrainingApplication v0.0.1-SNAPSHOT using Java 17.0.9 with PID 3049 (/home/ec2-user/files/gymbuddy-jars/gymbuddy-training-0.0.1-SNAPSHOT.jar started by ec2-user in /home/ec2-user/files/gymbuddy-jars)
+2023-11-24T19:03:09.519Z  INFO 3049 --- [           main] c.g.t.GymbuddyTrainingApplication        : No active profile set, falling back to 1 default profile: "default"
+2023-11-24T19:03:14.985Z  INFO 3049 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2023-11-24T19:03:15.256Z  INFO 3049 --- [           main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 235 ms. Found 2 JPA repository interfaces.
+2023-11-24T19:03:18.296Z  INFO 3049 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8081 (http)
+2023-11-24T19:03:18.346Z  INFO 3049 --- [           main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2023-11-24T19:03:18.346Z  INFO 3049 --- [           main] o.apache.catalina.core.StandardEngine    : Starting Servlet engine: [Apache Tomcat/10.1.7]
+2023-11-24T19:03:18.750Z  INFO 3049 --- [           main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2023-11-24T19:03:18.768Z  INFO 3049 --- [           main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 8936 ms
+2023-11-24T19:03:19.585Z  INFO 3049 --- [           main] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2023-11-24T19:03:19.815Z  INFO 3049 --- [           main] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 6.1.7.Final
+2023-11-24T19:03:20.774Z  INFO 3049 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2023-11-24T19:03:21.352Z  INFO 3049 --- [           main] com.zaxxer.hikari.pool.HikariPool        : HikariPool-1 - Added connection org.postgresql.jdbc.PgConnection@99a65d3
+2023-11-24T19:03:21.354Z  INFO 3049 --- [           main] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2023-11-24T19:03:21.422Z  INFO 3049 --- [           main] SQL dialect                              : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQLDialect
+2023-11-24T19:03:23.504Z  INFO 3049 --- [           main] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2023-11-24T19:03:23.523Z  INFO 3049 --- [           main] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2023-11-24T19:03:25.832Z  WARN 3049 --- [           main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2023-11-24T19:03:25.897Z  WARN 3049 --- [           main] .s.s.UserDetailsServiceAutoConfiguration : 
+
+Using generated security password: 06bcc5f8-33cb-4e89-abe7-95e05d29cf93
+
+This generated password is for development use only. Your security configuration must be updated before running your application in production.
+
+2023-11-24T19:03:26.280Z  INFO 3049 --- [           main] o.s.s.web.DefaultSecurityFilterChain     : Will secure any request with [org.springframework.security.web.session.DisableEncodeUrlFilter@3f018494, org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@3ce443f9, org.springframework.security.web.context.SecurityContextHolderFilter@44d64d4e, org.springframework.security.web.header.HeaderWriterFilter@97a145b, org.springframework.security.web.authentication.logout.LogoutFilter@34d45ec0, com.gymbuddy.auth.config.JwtTokenAuthorizationFilter$$SpringCGLIB$$0@4e517165, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@526a9908, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@47ac613b, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@57fbc06f, org.springframework.security.web.access.ExceptionTranslationFilter@633fd91]
+2023-11-24T19:03:29.890Z  INFO 3049 --- [           main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8081 (http) with context path ''
+2023-11-24T19:03:29.921Z  INFO 3049 --- [           main] c.g.t.GymbuddyTrainingApplication        : Started GymbuddyTrainingApplication in 22.811 seconds (process running for 25.191)
+2023-11-24T19:06:19.827Z  INFO 3049 --- [nio-8081-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2023-11-24T19:06:19.827Z  INFO 3049 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2023-11-24T19:06:19.829Z  INFO 3049 --- [nio-8081-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 1 ms
+2023-11-24T19:06:19.848Z ERROR 3049 --- [nio-8081-exec-1] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+com.gymbuddy.auth.exception.ServiceExpection: Token not provided [No token provided]
+	at com.gymbuddy.auth.config.JwtTokenAuthorizationFilter.doFilterInternal(JwtTokenAuthorizationFilter.java:54) ~[gymbuddy-auth-1.0.0-SNAPSHOT.jar!/:1.0.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+
+2023-11-24T19:16:52.414Z ERROR 3049 --- [nio-8081-exec-2] o.a.c.c.C.[.[.[/].[dispatcherServlet]    : Servlet.service() for servlet [dispatcherServlet] in context with path [] threw exception
+
+com.gymbuddy.auth.exception.ServiceExpection: The provided token is not valid!
+	at com.gymbuddy.auth.security.JwtValidationHelper.getJwtClaims(JwtValidationHelper.java:32) ~[gymbuddy-auth-1.0.0-SNAPSHOT.jar!/:1.0.0-SNAPSHOT]
+	at com.gymbuddy.auth.security.JwtValidationHelper.getValidTokenClaim(JwtValidationHelper.java:20) ~[gymbuddy-auth-1.0.0-SNAPSHOT.jar!/:1.0.0-SNAPSHOT]
+	at com.gymbuddy.auth.config.JwtTokenAuthorizationFilter.doFilterInternal(JwtTokenAuthorizationFilter.java:64) ~[gymbuddy-auth-1.0.0-SNAPSHOT.jar!/:1.0.0-SNAPSHOT]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:107) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.authentication.logout.LogoutFilter.doFilter(LogoutFilter.java:93) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doHeadersAfter(HeaderWriterFilter.java:90) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.header.HeaderWriterFilter.doFilterInternal(HeaderWriterFilter.java:75) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:82) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.context.SecurityContextHolderFilter.doFilter(SecurityContextHolderFilter.java:69) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter.doFilterInternal(WebAsyncManagerIntegrationFilter.java:62) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.session.DisableEncodeUrlFilter.doFilterInternal(DisableEncodeUrlFilter.java:42) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.security.web.FilterChainProxy$VirtualFilterChain.doFilter(FilterChainProxy.java:374) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilterInternal(FilterChainProxy.java:233) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.security.web.FilterChainProxy.doFilter(FilterChainProxy.java:191) ~[spring-security-web-6.0.2.jar!/:6.0.2]
+	at org.springframework.web.filter.DelegatingFilterProxy.invokeDelegate(DelegatingFilterProxy.java:352) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.DelegatingFilterProxy.doFilter(DelegatingFilterProxy.java:268) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.springframework.web.filter.RequestContextFilter.doFilterInternal(RequestContextFilter.java:100) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.springframework.web.filter.FormContentFilter.doFilterInternal(FormContentFilter.java:93) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.springframework.web.filter.CharacterEncodingFilter.doFilterInternal(CharacterEncodingFilter.java:201) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.springframework.web.filter.OncePerRequestFilter.doFilter(OncePerRequestFilter.java:116) ~[spring-web-6.0.7.jar!/:6.0.7]
+	at org.apache.catalina.core.ApplicationFilterChain.internalDoFilter(ApplicationFilterChain.java:174) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.ApplicationFilterChain.doFilter(ApplicationFilterChain.java:149) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardWrapperValve.invoke(StandardWrapperValve.java:166) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardContextValve.invoke(StandardContextValve.java:90) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.authenticator.AuthenticatorBase.invoke(AuthenticatorBase.java:493) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardHostValve.invoke(StandardHostValve.java:115) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.valves.ErrorReportValve.invoke(ErrorReportValve.java:93) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.core.StandardEngineValve.invoke(StandardEngineValve.java:74) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.catalina.connector.CoyoteAdapter.service(CoyoteAdapter.java:341) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.coyote.http11.Http11Processor.service(Http11Processor.java:390) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.coyote.AbstractProcessorLight.process(AbstractProcessorLight.java:63) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.coyote.AbstractProtocol$ConnectionHandler.process(AbstractProtocol.java:894) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.net.NioEndpoint$SocketProcessor.doRun(NioEndpoint.java:1741) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.net.SocketProcessorBase.run(SocketProcessorBase.java:52) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1191) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.threads.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:659) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at org.apache.tomcat.util.threads.TaskThread$WrappingRunnable.run(TaskThread.java:61) ~[tomcat-embed-core-10.1.7.jar!/:na]
+	at java.base/java.lang.Thread.run(Thread.java:840) ~[na:na]
+Caused by: org.jose4j.jwt.consumer.InvalidJwtException: JWT (claims->{"iss":"https://securetoken.google.com/gymbuddy-b4e20","aud":"gymbuddy-b4e20","auth_time":1696195067,"user_id":"zZIyoSW6J3SBuTfTAbQVw8jJ7q82","sub":"zZIyoSW6J3SBuTfTAbQVw8jJ7q82","iat":1696195067,"exp":1696198667,"email":"test@email.com","email_verified":false,"firebase":{"identities":{"email":["test@email.com"]},"sign_in_provider":"password"}}) rejected due to invalid claims or other invalid content. Additional details: [[1] The JWT is no longer valid - the evaluation time NumericDate{1700853412 -> Nov 24, 2023, 7:16:52 PM UTC} is on or after the Expiration Time (exp=NumericDate{1696198667 -> Oct 1, 2023, 10:17:47 PM UTC}) claim value.]
+	at org.jose4j.jwt.consumer.JwtConsumer.validate(JwtConsumer.java:459) ~[jose4j-0.9.3.jar!/:na]
+	at org.jose4j.jwt.consumer.JwtConsumer.processContext(JwtConsumer.java:304) ~[jose4j-0.9.3.jar!/:na]
+	at org.jose4j.jwt.consumer.JwtConsumer.process(JwtConsumer.java:426) ~[jose4j-0.9.3.jar!/:na]
+	at com.gymbuddy.auth.security.JwtValidationHelper.getJwtClaims(JwtValidationHelper.java:30) ~[gymbuddy-auth-1.0.0-SNAPSHOT.jar!/:1.0.0-SNAPSHOT]
+	... 54 common frames omitted
+
+2023-11-24T20:11:11.892Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-24T20:11:11.903Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T20:16:17.575Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutController       : Endpoint::createWorkout invoked. creatableWorkout: ChangeWorkoutRequest(title=test training, description=, category=ENDURANCE, difficulty=EASY), userId: zZIyoSW6J3SBuTfTAbQVw8jJ7q82
+Hibernate: insert into workout (category, description, difficulty, last_modified, registered_on, title, user_id) values (?, ?, ?, ?, ?, ?, ?)
+2023-11-24T20:16:17.932Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T20:16:19.249Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-24T20:47:36.764Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T20:47:37.428Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-24T20:47:37.452Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T20:47:37.582Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T20:48:06.997Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::newStep invoked. workoutId: 1, creatableWorkoutStepDto: ChangeWorkoutStepRequest(stepName=step 1, details=, workoutType=INTERVAL, estimatedTime=30)
+Hibernate: SELECT MAX(step_position) + 1 FROM workout_step s WHERE s.workout_id = ?
+2023-11-24T20:48:07.004Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.service.DefaultWorkoutStepService  : Creating: WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+Hibernate: select w1_0.step_id,w1_0.workout_id,w1_0.details,w1_0.estimated_time,w1_0.step_name,w1_0.step_position,w1_0.workout_type from workout_step w1_0 where (w1_0.step_id,w1_0.workout_id) in((?,?))
+Hibernate: insert into workout_step (details, estimated_time, step_name, step_position, workout_type, step_id, workout_id) values (?, ?, ?, ?, ?, ?, ?)
+2023-11-24T20:48:07.034Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.service.DefaultWorkoutStepService  : Created: WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+2023-11-24T20:48:07.467Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-24T20:48:07.542Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T20:48:07.839Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T20:55:24.468Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T20:55:24.471Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T20:56:38.215Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T20:56:38.235Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T21:04:29.595Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-24T21:04:29.596Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T21:04:36.412Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-24T21:04:36.415Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T21:07:35.172Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::newStep invoked. workoutId: 1, creatableWorkoutStepDto: ChangeWorkoutStepRequest(stepName=step2, details=, workoutType=INTERVAL, estimatedTime=0)
+Hibernate: SELECT MAX(step_position) + 1 FROM workout_step s WHERE s.workout_id = ?
+2023-11-24T21:07:35.175Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.service.DefaultWorkoutStepService  : Creating: WorkoutStep::Step: WorkoutStepId(stepId=2, workoutId=1)
+Hibernate: select w1_0.step_id,w1_0.workout_id,w1_0.details,w1_0.estimated_time,w1_0.step_name,w1_0.step_position,w1_0.workout_type from workout_step w1_0 where (w1_0.step_id,w1_0.workout_id) in((?,?))
+Hibernate: insert into workout_step (details, estimated_time, step_name, step_position, workout_type, step_id, workout_id) values (?, ?, ?, ?, ?, ?, ?)
+2023-11-24T21:07:35.180Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.service.DefaultWorkoutStepService  : Created: WorkoutStep::Step: WorkoutStepId(stepId=2, workoutId=1)
+2023-11-24T21:07:35.823Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-24T21:07:35.842Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T21:07:36.097Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T21:07:50.262Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutStepsController  : Endpoint::editStep invoked. workoutId: 1, stepId: 2, editableWorkoutStepDto: ChangeWorkoutStepRequest(stepName=step2, details=, workoutType=INTERVAL, estimatedTime=90)
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ? AND s.step_id = ?
+2023-11-24T21:07:50.270Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.service.DefaultWorkoutStepService  : Editing: WorkoutStep::Step: WorkoutStepId(stepId=2, workoutId=1)
+Hibernate: update workout_step set details=?, estimated_time=?, step_name=?, step_position=?, workout_type=? where step_id=? and workout_id=?
+2023-11-24T21:07:50.276Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.service.DefaultWorkoutStepService  : Edit successful! WorkoutStep::Step: WorkoutStepId(stepId=2, workoutId=1)
+2023-11-24T21:07:50.602Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-24T21:07:50.640Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T21:07:50.777Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-24T21:46:07.802Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T21:46:07.861Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T21:48:34.261Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T21:48:34.284Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T22:00:21.487Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-24T22:00:21.493Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T14:43:15.110Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T14:43:15.434Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T14:43:15.455Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T14:43:15.608Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T14:44:24.244Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutStepsController  : Endpoint::editStep invoked. workoutId: 1, stepId: 1, editableWorkoutStepDto: ChangeWorkoutStepRequest(stepName=step 1, details=, workoutType=INTERVAL, estimatedTime=30)
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ? AND s.step_id = ?
+2023-11-25T14:44:24.247Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.service.DefaultWorkoutStepService  : Editing: WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+2023-11-25T14:44:24.248Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.service.DefaultWorkoutStepService  : Edit successful! WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+2023-11-25T14:44:24.265Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutStepsController  : Endpoint::editStep invoked. workoutId: 1, stepId: 1, editableWorkoutStepDto: ChangeWorkoutStepRequest(stepName=step 1, details=, workoutType=INTERVAL, estimatedTime=30)
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ? AND s.step_id = ?
+2023-11-25T14:44:24.268Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.service.DefaultWorkoutStepService  : Editing: WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+2023-11-25T14:44:24.268Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.service.DefaultWorkoutStepService  : Edit successful! WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+2023-11-25T14:44:24.460Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T14:44:24.466Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T14:44:24.476Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T14:44:24.500Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T14:44:24.670Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T14:58:41.225Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T14:58:50.502Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T16:42:15.032Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T16:42:15.211Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T16:42:15.226Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T16:42:15.340Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T16:42:28.504Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutStepsController  : Endpoint::editStep invoked. workoutId: 1, stepId: 1, editableWorkoutStepDto: ChangeWorkoutStepRequest(stepName=step 1, details=, workoutType=INTERVAL, estimatedTime=30)
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ? AND s.step_id = ?
+2023-11-25T16:42:28.507Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.service.DefaultWorkoutStepService  : Editing: WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+2023-11-25T16:42:28.508Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.service.DefaultWorkoutStepService  : Edit successful! WorkoutStep::Step: WorkoutStepId(stepId=1, workoutId=1)
+2023-11-25T16:42:28.648Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T16:42:28.654Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T16:42:28.803Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T19:14:10.703Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:29.798Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:29.801Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:40.451Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:40.465Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:46.754Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:46.777Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:54.639Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:14:54.682Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:15:43.692Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:15:43.698Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:15:57.487Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T19:15:57.502Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:16:02.564Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:16:02.595Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:16:31.506Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:16:31.516Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:16:41.904Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:16:41.925Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:16:53.514Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T19:16:53.515Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:17:21.049Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:17:21.120Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:21:11.361Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T19:21:11.370Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:21:37.472Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:21:37.493Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:25:54.141Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:25:54.188Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:26:07.496Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:26:07.631Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:26:27.920Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:26:27.971Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:27:38.165Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:27:38.190Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:27:49.137Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:27:49.193Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:28:03.735Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:28:03.787Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:28:37.620Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:28:37.711Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:29:37.252Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:29:37.284Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:29:45.536Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:29:45.638Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:29:57.546Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:29:57.571Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:30:02.214Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:30:02.295Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:30:08.612Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:30:08.619Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:30:14.558Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:30:14.577Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:31:13.466Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:31:13.472Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:43:24.326Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:43:24.649Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T19:43:24.685Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T19:43:24.762Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T19:44:21.698Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T19:44:21.753Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T20:13:57.103Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T20:13:57.228Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T20:13:57.233Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T20:13:57.336Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:08:35.390Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:08:36.012Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:08:36.026Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:08:36.143Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:11:59.459Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:12:02.647Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:12:02.661Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:12:02.763Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:12:37.799Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:12:37.817Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:14:16.225Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutController       : Endpoint::createWorkout invoked. creatableWorkout: ChangeWorkoutRequest(title=another workout, description=, category=ENDURANCE, difficulty=EASY), userId: zZIyoSW6J3SBuTfTAbQVw8jJ7q82
+Hibernate: insert into workout (category, description, difficulty, last_modified, registered_on, title, user_id) values (?, ?, ?, ?, ?, ?, ?)
+2023-11-25T21:14:16.531Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:14:16.970Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:14:21.134Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:19:50.929Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:19:51.169Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:23:00.365Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:23:00.533Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:26:06.365Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:26:06.873Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:26:06.882Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:26:06.891Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:26:07.008Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:26:07.091Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:26:07.093Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:27:01.351Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:27:01.358Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:28:38.679Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:29:49.025Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:29:49.031Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:30:01.518Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:30:01.692Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:30:01.716Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:30:01.730Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:30:01.733Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:30:01.822Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:30:01.858Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:31:42.330Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:31:42.340Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:32:17.567Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:32:17.800Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:32:49.714Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T21:32:49.714Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:33:05.905Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:33:06.323Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:33:06.329Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:33:06.378Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:33:06.386Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:33:06.493Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:33:06.583Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:33:56.961Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:33:57.011Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:34:15.590Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:34:15.601Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:34:28.426Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:34:28.435Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:39:06.746Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:39:06.767Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:41:57.135Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:41:57.559Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:41:57.570Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:41:57.576Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:41:57.589Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:41:57.781Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:41:57.783Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:42:13.508Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:42:13.550Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:42:18.388Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:42:18.406Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:42:46.222Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T21:42:46.725Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:42:46.743Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:42:46.752Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T21:42:46.796Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T21:42:46.939Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T21:42:47.015Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T22:09:26.682Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:09:26.724Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:09:59.358Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:09:59.585Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:10:13.172Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:10:13.224Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:10:29.099Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:10:29.166Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:13:17.921Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:13:18.006Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:39:44.729Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T22:39:44.730Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:43:25.823Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:43:25.827Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:44:03.195Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:44:03.222Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:44:35.745Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:44:35.751Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:45:04.386Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:45:04.396Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:47:02.871Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T22:47:02.872Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:48:17.917Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:48:17.987Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:48:38.977Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutController       : Endpoint::createWorkout invoked. creatableWorkout: ChangeWorkoutRequest(title=Back day, description=, category=ENDURANCE, difficulty=EASY), userId: zZIyoSW6J3SBuTfTAbQVw8jJ7q82
+Hibernate: insert into workout (category, description, difficulty, last_modified, registered_on, title, user_id) values (?, ?, ?, ?, ?, ?, ?)
+2023-11-25T22:48:42.078Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:48:49.073Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T22:49:35.024Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:49:35.031Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:50:27.406Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T22:50:27.406Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:50:44.796Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:50:44.803Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:51:37.724Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:51:37.733Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:53:35.440Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:53:35.447Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:56:47.773Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:56:57.595Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:56:57.609Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:57:38.719Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:57:38.739Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:58:04.576Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T22:58:04.577Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:58:22.056Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:58:22.115Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:59:35.035Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T22:59:35.089Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:00:07.848Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:00:07.859Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:02:05.858Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:02:05.913Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:02:14.703Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:02:14.893Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:05:36.684Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:05:36.689Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:06:42.259Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:06:42.269Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:07:30.393Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:07:30.400Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:07:30.412Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:07:30.415Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:07:30.417Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T23:07:30.420Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T23:07:30.628Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T23:07:30.631Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T23:07:30.639Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:07:32.429Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:10:34.730Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:10:34.755Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:11:26.932Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:13:34.822Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutController       : Endpoint::editWorkout invoked. updatableWorkout: ChangeWorkoutRequest(title=test training, description=Test training. It will change over time., category=ENDURANCE, difficulty=EASY), workoutId: 1
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0 where w1_0.workout_id=?
+Hibernate: update workout set category=?, description=?, difficulty=?, last_modified=?, registered_on=?, title=?, user_id=? where workout_id=?
+2023-11-25T23:13:35.260Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:14:35.468Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:14:35.593Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:14:35.599Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:14:35.682Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:14:38.663Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:15:57.368Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:15:57.373Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:16:12.633Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:16:12.881Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:17:22.432Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:17:22.478Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:17:32.191Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:17:32.271Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:18:11.556Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:18:11.567Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:18:59.826Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:18:59.845Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:19:04.586Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:19:04.638Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:06.834Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:06.863Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:17.456Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:17.525Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:32.698Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:32.709Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:48.659Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:20:48.811Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:11.290Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:11.396Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:18.759Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:18.779Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:44.694Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:44.713Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:54.722Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:21:54.748Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:22:00.753Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-25T23:22:00.755Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:22:43.068Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:22:43.320Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:23:28.834Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:23:28.846Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:24:39.951Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutController       : Endpoint::editWorkout invoked. updatableWorkout: ChangeWorkoutRequest(title=test training, description=Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nulla eu mauris lobortis quam volutpat faucibus. Orci varius natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Etiam ultricies odio vel luctus condimentum. Sed at tristique augue. In hac habitasse platea dictumst. Sed sed tincidunt purus, vel vehicula ipsum. Cras mollis dolor eget dictum gravida. Ut blandit lorem velit, sit amet ullamcorper massa pharetra quis.
+
+Cras non neque turpis. Pellentesque tempus metus ac viverra dictum. Suspendisse at est quam. Duis aliquet enim velit, sed venenatis nulla commodo vitae. Suspendisse ex mauris, lobortis sit amet dignissim a, ullamcorper eu nibh. Nulla consequat elit eget dolor egestas fermentum. Etiam blandit tincidunt nisi, quis iaculis lorem tristique vestibulum. Quisque euismod augue ullamcorper vestibulum dignissim. Mauris porttitor commodo nisi nec euismod.
+
+Nulla nec congue ipsum. Vivamus et nunc nec nibh vehicula condimentum. Maecenas quam libero, tempor sit amet enim et, cursus aliquet erat. Interdum et malesuada fames ac ante ipsum primis in faucibus. Vivamus molestie lorem non imperdiet egestas. Nulla ut quam nunc. Aenean accumsan sapien eget ligula dapibus, ac rhoncus elit cursus. Phasellus ultrices laoreet eros, id congue metus bibendum et. Quisque condimentum vehicula venenatis. Duis arcu quam, sagittis in pharetra et, ultrices quis enim. In ut ante pulvinar, fringilla massa at, consectetur augue. Nulla pulvinar dui sed ex sodales semper. Pellentesque vel enim egestas, sollicitudin dui a, interdum eros. Vestibulum dignissim metus at tellus elementum, sit amet euismod lacus auctor.
+
+Pellentesque volutpat dui ut pellentesque dictum. Fusce vel fringilla purus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Donec facilisis libero quis tempus blandit. Maecenas et varius nunc. Donec elementum rhoncus dapibus. Mauris ultrices pellentesque ipsum, sed luctus est gravida vitae. Aliquam eget ipsum libero. Morbi pulvinar dapibus massa, eu commodo nunc condimentum vel. Donec dapibus, arcu ac sollicitudin fringilla, purus lacus gravida dui, nec vehicula purus enim quis est. Sed finibus ut risus eget tristique. Proin elementum porttitor est fermentum auctor.
+
+Sed eleifend est a massa posuere, at molestie odio porttitor. Nunc eget convallis arcu. Nulla egestas venenatis sagittis. In vulputate turpis dui, et luctus mauris ultricies a. Duis in sapien nec nisl volutpat aliquam. Pellentesque est lectus, mollis id vestibulum id, maximus placerat est. Nam dictum turpis nisi, mollis suscipit ligula euismod ultrices. Morbi sed quam eu mi imperdiet egestas. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. In eu ligula eros. Curabitur rutrum, diam et hendrerit egestas, ante erat luctus lorem, eget faucibus ante nulla vel diam. Nam dignissim neque vitae magna tristique porttitor. Nullam accumsan lacinia risus sed scelerisque., category=ENDURANCE, difficulty=EASY), workoutId: 1
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0 where w1_0.workout_id=?
+Hibernate: update workout set category=?, description=?, difficulty=?, last_modified=?, registered_on=?, title=?, user_id=? where workout_id=?
+2023-11-25T23:24:40.329Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:26:10.654Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:26:10.849Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:26:29.715Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:26:29.737Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:26:53.984Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:26:54.017Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:29:20.574Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:29:20.598Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:30:57.942Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:30:57.952Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:31:19.626Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:31:19.653Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:32:08.290Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:32:08.684Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:32:08.726Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:32:08.731Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:32:08.732Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T23:32:08.744Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:32:08.763Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T23:32:08.816Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T23:32:08.848Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:32:08.874Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T23:33:12.581Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:33:12.594Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:33:32.472Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:33:32.483Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:33:56.568Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:33:56.577Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:34:06.327Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:34:06.661Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:34:30.106Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:34:30.278Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:34:52.289Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:34:52.601Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:35:24.934Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:35:25.231Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:35:47.311Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:35:47.313Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:37:34.907Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:37:35.230Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:37:53.107Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:37:53.411Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:38:32.382Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:38:32.547Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:39:35.390Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:39:35.422Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:40:25.186Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:40:25.492Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:40:30.304Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:40:30.328Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:41:41.592Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:41:41.598Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:41:47.533Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:41:47.776Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:42:20.754Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:42:20.765Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:42:26.140Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:42:26.548Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:42:55.047Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:42:55.373Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:45:21.568Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:45:21.587Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:45:38.715Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:45:38.729Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:45:54.350Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:45:54.660Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:46:19.688Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:46:19.697Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:47:20.804Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:47:20.820Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:49:19.347Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:49:19.352Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:50:00.330Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:50:00.339Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:54:24.670Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:54:24.672Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:55:51.404Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:55:51.454Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:56:19.246Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:56:19.249Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:58:26.847Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:58:26.859Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:58:48.245Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:58:49.274Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:58:49.286Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:58:49.297Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:58:49.309Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T23:58:49.311Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-25T23:58:49.313Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T23:58:49.435Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-25T23:58:49.443Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-25T23:58:49.454Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-25T23:59:43.935Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:59:44.062Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:59:58.717Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-25T23:59:58.730Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:00:17.048Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:00:17.077Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:00:29.223Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:00:29.236Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:00:42.819Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:00:42.834Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:01:40.225Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:01:40.233Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:01:48.620Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:01:48.625Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:02:45.355Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:02:45.369Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:02:56.494Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:02:56.497Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:03:42.644Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:03:42.655Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:04:25.968Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:04:26.131Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:06:14.090Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:06:14.616Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:06:14.635Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:06:14.646Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-26T00:06:14.661Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T00:06:14.671Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:06:14.677Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T00:06:14.750Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T00:06:14.784Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-26T00:06:14.838Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T00:06:51.845Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:06:51.854Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:08:02.463Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:08:02.605Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:08:23.466Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:08:23.490Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:09:20.967Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:09:21.022Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:09:46.239Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:09:46.337Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:09:59.197Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:09:59.224Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:10:27.192Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:10:27.205Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:10:34.882Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+2023-11-26T00:10:34.880Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:10:52.147Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:10:52.156Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:10:56.718Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:10:57.103Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:11:32.222Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:11:32.310Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:12:25.186Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:12:25.318Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:13:29.841Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:13:29.855Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:13:48.995Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:13:49.353Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:13:59.639Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:13:59.842Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:15:37.824Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:16:02.093Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:16:02.304Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:16:38.246Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:16:38.700Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:16:38.709Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:16:38.720Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T00:16:38.726Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:16:38.728Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T00:16:38.742Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-26T00:16:38.885Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T00:16:38.891Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-26T00:16:38.897Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T00:17:18.655Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:17:18.794Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:19:42.693Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:19:42.721Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:20:19.874Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:20:20.031Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:20:48.939Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:20:48.958Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:21:14.292Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:21:14.308Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:31:13.128Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T00:31:19.845Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:31:19.852Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-26T00:31:19.854Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:31:19.867Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T00:31:19.971Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T00:31:19.972Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T00:31:20.273Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T00:31:20.273Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-26T00:31:20.274Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T20:13:07.028Z  INFO 3049 --- [io-8081-exec-10] c.g.t.controller.WorkoutListController   : Endpoint::getAllWorkouts invoked.
+Hibernate: select w1_0.workout_id,w1_0.category,w1_0.description,w1_0.difficulty,w1_0.last_modified,w1_0.registered_on,w1_0.title,w1_0.user_id from workout w1_0
+2023-11-26T20:13:07.131Z  INFO 3049 --- [nio-8081-exec-2] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 2
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T20:13:07.134Z  INFO 3049 --- [nio-8081-exec-1] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T20:13:07.152Z  INFO 3049 --- [nio-8081-exec-5] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
+2023-11-26T20:13:07.168Z  INFO 3049 --- [nio-8081-exec-4] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T20:13:07.177Z  INFO 3049 --- [nio-8081-exec-7] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 3
+2023-11-26T20:13:07.177Z  INFO 3049 --- [nio-8081-exec-6] c.g.t.controller.WorkoutStepsController  : Endpoint::getAllSteps invoked. workoutId: 1
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+Hibernate: SELECT * FROM workout_step s WHERE s.workout_id = ?
+2023-11-26T20:13:07.230Z  INFO 3049 --- [nio-8081-exec-8] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 2
+2023-11-26T20:13:07.242Z  INFO 3049 --- [nio-8081-exec-3] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 3
+2023-11-26T20:13:07.244Z  INFO 3049 --- [nio-8081-exec-9] c.g.t.controller.WorkoutUtilController   : Endpoint::getGeneralDetails invoked. workoutId: 1
